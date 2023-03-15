@@ -9,8 +9,48 @@ const Contact = () => {
      const formRef = useRef();
      const [form, setForm] = useState({ name: '', email: '', message: '' });
      const [loading, setLoading] = useState(false);
-     const handleChange = (e) => {};
-     const handleSubmit = (e) => {};
+     const handleChange = (e) => {
+          const { name, value } = e.target;
+          setForm({ ...form, [name]: value });
+     };
+     const handleSubmit = (e) => {
+          e.preventDefault();
+          setLoading(true);
+
+          emailjs
+               .send(
+                    import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+                    import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+                    {
+                         from_name: form.name,
+                         to_name: 'JavaScript Mastery',
+                         from_email: form.email,
+                         to_email: 'sujata@jsmastery.pro',
+                         message: form.message,
+                    },
+                    import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+               )
+               .then(
+                    () => {
+                         setLoading(false);
+                         alert(
+                              'Thank you. I will get back to you as soon as possible.'
+                         );
+
+                         setForm({
+                              name: '',
+                              email: '',
+                              message: '',
+                         });
+                    },
+                    (error) => {
+                         setLoading(false);
+                         console.error(error);
+
+                         alert('Ahh, something went wrong. Please try again.');
+                    }
+               );
+     };
      return (
           <div className='xl:mt-12 xl:flex-row flex flex-col-reverse gap-10 overflow-hidden'>
                <motion.div
@@ -74,7 +114,10 @@ const Contact = () => {
                     </form>
                </motion.div>
                <motion.div
-                    variants={slideIn('fight', 'twin', 0.2, 1)}></motion.div>
+                    className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+                    variants={slideIn('right', 'twin', 0.2, 1)}>
+                    <EarthCanvas />
+               </motion.div>
           </div>
      );
 };
