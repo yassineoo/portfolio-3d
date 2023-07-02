@@ -8,6 +8,7 @@ import {
      html,
      css,
      reactjs,
+     nextjs,
      redux,
      tailwind,
      nodejs,
@@ -15,14 +16,20 @@ import {
      git,
      figma,
      docker,
-     meta,
-     starbucks,
-     tesla,
-     shopify,
-     carrent,
-     jobit,
-     tripguide,
+     esisba,
+     esi,
+     cdta,
+    
      threejs,
+     dzcooks,
+     google,
+     hackadon,
+     hulu,
+     idei8086,
+     instagrame,
+     portfolio,
+     cuppa,
+     rehlaty,
 } from '../assets';
 
 export const navLinks = [
@@ -46,7 +53,7 @@ const services = [
           icon: web,
      },
      {
-          title: 'React Native Developer',
+          title: 'Kotlin Developer',
           icon: mobile,
      },
      {
@@ -81,8 +88,8 @@ const technologies = [
           icon: reactjs,
      },
      {
-          name: 'Redux Toolkit',
-          icon: redux,
+          name: 'Nextjs',
+          icon: nextjs,
      },
      {
           name: 'Tailwind CSS',
@@ -116,11 +123,11 @@ const technologies = [
 
 const experiences = [
      {
-          title: 'React.js Developer',
-          company_name: 'Starbucks',
-          icon: starbucks,
+          title: 'Node.js Developer',
+          company_name: 'ESI SBA',
+          icon: esisba,
           iconBg: '#383E56',
-          date: 'March 2020 - April 2021',
+          date: 'September 2019 - Juin 2021',
           points: [
                'Developing and maintaining web applications using React.js and other related technologies.',
                'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
@@ -129,136 +136,178 @@ const experiences = [
           ],
      },
      {
-          title: 'React Native Developer',
-          company_name: 'Tesla',
-          icon: tesla,
+          title: 'Software Engineer',
+          company_name: 'CDTA',
+          icon: cdta,
           iconBg: '#E6DEDD',
-          date: 'Jan 2021 - Feb 2022',
+          date: 'sep 2022 - oct 2022',
           points: [
-               'Developing and maintaining web applications using React.js and other related technologies.',
-               'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-               'Implementing responsive design and ensuring cross-browser compatibility.',
-               'Participating in code reviews and providing constructive feedback to other developers.',
+               `Analyzed Mediboard's document exchange in SIH.`,
+               `Identified tactics to improve interoperability.`,
+               `Proposed solutions: secure messaging, EHR integration.`,
+              `Conducted evaluation and gathered feedback.`,
+               `Recommended continuous improvement.`
           ],
      },
      {
-          title: 'Web Developer',
+          title: 'Web  and mobile developer',
           company_name: 'Shopify',
-          icon: shopify,
+          icon: esi,
           iconBg: '#383E56',
           date: 'Jan 2022 - Jan 2023',
           points: [
-               'Developing and maintaining web applications using React.js and other related technologies.',
-               'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-               'Implementing responsive design and ensuring cross-browser compatibility.',
-               'Participating in code reviews and providing constructive feedback to other developers.',
+               'Developing and maintaining web applications using Next.js and other related technologies.',
+               'Developing a delivery mobile App in kotlin ',
+               'Implementing many APIs in Nodejs and Typescript  ',
+             
           ],
      },
-     {
-          title: 'Full stack Developer',
-          company_name: 'Meta',
-          icon: meta,
-          iconBg: '#E6DEDD',
-          date: 'Jan 2023 - Present',
-          points: [
-               'Developing and maintaining web applications using React.js and other related technologies.',
-               'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-               'Implementing responsive design and ensuring cross-browser compatibility.',
-               'Participating in code reviews and providing constructive feedback to other developers.',
-          ],
-     },
+ 
 ];
 
 const testimonials = [
      {
           testimonial:
-               'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-          name: 'Sara Lee',
-          designation: 'CFO',
-          company: 'Acme Co',
-          image: 'https://randomuser.me/api/portraits/women/4.jpg',
+               "i really admire this guy's potential as a developer . he really never stops learning more and amazing us with his project and his perfermance",
+          name: 'Chamseddine',
+          designation: 'TeamMate',
+          company: 'ESI',
+          image: 'https://media.licdn.com/dms/image/D4E35AQG7K9usREbXlQ/profile-framedphoto-shrink_100_100/0/1649587013406?e=1688918400&v=beta&t=w4B5xw1sny0oVCxfwWJCAZ6vyfpMuSUFEIOsvYzd3qQ',
      },
      {
           testimonial:
-               "I've never met a web developer who truly cares about their clients' success like Rick does.",
-          name: 'Chris Brown',
+               "Yssine is an exceptional problem solver who is not afraid of any kind of challenge , a talented full stack developer with a very polished set of skills and a great team partner who knows how to collaborate and manage himself in a team and even spread his positive aura across all of the members.",
+          name: 'Assoul Sidali',
           designation: 'COO',
-          company: 'DEF Corp',
-          image: 'https://randomuser.me/api/portraits/men/5.jpg',
+          company: 'Esi Sba',
+          image: 'https://media.licdn.com/dms/image/C4D03AQHNqjbxZPx3JQ/profile-displayphoto-shrink_100_100/0/1657285017885?e=1694044800&v=beta&t=ix80JrSnnilGrSNhjFak2CznYhQsvy1b0IIcCJ3BPC0',
      },
-     {
-          testimonial:
-               "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-          name: 'Lisa Wang',
-          designation: 'CTO',
-          company: '456 Enterprises',
-          image: 'https://randomuser.me/api/portraits/women/6.jpg',
-     },
+
 ];
 
 const projects = [
      {
-          name: 'Car Rent',
+          id: 1,
+          name: 'Cuppa',
           description:
-               'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+               'smart coffe vending machine system contains 1 web  and 3 mobile app ',
+          image: cuppa,
+          deployed_url: 'https://cuppa-frontend.vercel.app/login',
+          source_code_link:
+          'https://github.com/yassineoo/cuppa-frontend',
+          category: ['node', 'Mongo'],
           tags: [
-               {
-                    name: 'react',
-                    color: 'blue-text-gradient',
-               },
-               {
-                    name: 'mongodb',
-                    color: 'green-text-gradient',
-               },
-               {
-                    name: 'tailwind',
-                    color: 'pink-text-gradient',
-               },
+               { name: 'Nextjs', color: 'green-text-gradient' },
+               { name: 'tailwindCss', color: 'blue-text-gradient' },
+               { name: 'express', color: 'red-text-gradient' },
           ],
-          image: carrent,
-          source_code_link: 'https://github.com/',
      },
      {
-          name: 'Job IT',
+          id: 1,
+          name: 'IDE Intelx8086',
           description:
-               'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+               'This app is a emulator + compiler for intel assembly i8086',
+          image: idei8086,
+          deployed_url: 'https://idrist11.github.io/8086-Online-IDE/',
+          source_code_link:
+               'https://github.com/yassineoo/vgath8086-fullbackend-in-nodejs-express-mongodb',
+          category: ['Node', 'Mongo'],
           tags: [
-               {
-                    name: 'react',
-                    color: 'blue-text-gradient',
-               },
-               {
-                    name: 'restapi',
-                    color: 'green-text-gradient',
-               },
-               {
-                    name: 'scss',
-                    color: 'pink-text-gradient',
-               },
+               { name: 'Nodejs', color: 'green-text-gradient' },
+               { name: 'bootstrap', color: 'blue-text-gradient' },
+               { name: 'express', color: 'red-text-gradient' },
           ],
-          image: jobit,
-          source_code_link: 'https://github.com/',
      },
      {
-          name: 'Trip Guide',
+          id: 2,
+          name: 'Instagrame clone',
+          image: instagrame,
+          deployed_url: 'https://instagrame2-0.vercel.app/',
+          source_code_link: 'https://github.com/yassineoo/Instagrame-2.0',
+          category: ['Nextjs'],
           description:
-               'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+               ' Typical Social Media App where one can post,like ,comment etc ',
           tags: [
-               {
-                    name: 'nextjs',
-                    color: 'blue-text-gradient',
-               },
-               {
-                    name: 'supabase',
-                    color: 'green-text-gradient',
-               },
-               {
-                    name: 'css',
-                    color: 'pink-text-gradient',
-               },
+               { name: 'Nextjs', color: 'pink-text-gradient' },
+               { name: 'firebase', color: 'green-text-gradient' },
+               { name: 'tailwindcss', color: 'red-text-gradient' },
           ],
-          image: tripguide,
-          source_code_link: 'https://github.com/',
+     },
+
+     {
+          id: 3,
+          name: 'hulu movies',
+          image: hulu,
+          deployed_url: 'https://hulumoviesseconde.vercel.app/',
+          source_code_link: 'https://github.com/yassineoo/hulu-movies',
+          category: ['Nextjs'],
+          description:
+               'muvies website shows the lateste movies in cinima using dbm Api',
+          tags: [
+               { name: 'Nextjs', color: 'pink-text-gradient' },
+               { name: 'tailwindcss', color: 'green-text-gradient' },
+          ],
+     },
+     {
+          id: 10,
+          name: 'DZ-cooks',
+          image: dzcooks,
+          deployed_url: 'https://dz-cooks.000webhostapp.com/DZ-cooks/',
+          source_code_link: 'https://github.com/yassineoo/dz-cooks',
+          category: ['Nextjs'],
+          description:
+               'Dz-cooks website for recipes made from scratch in one month',
+          tags: [
+               { name: 'PHP', color: 'blue-text-gradient' },
+               { name: 'SQL', color: 'green-text-gradient' },
+          ],
+     },
+
+     {
+          id: 4,
+          name: 'Google search clone',
+          image: google,
+          deployed_url: 'https://google-search-seven.vercel.app/',
+          source_code_link: 'https://github.com/yassineoo/google-search-Engine',
+          category: ['Nextjs', 'react'],
+          description: 'google search engine clone using google api ',
+          tags: [
+               { name: 'Nextjs', color: 'pink-text-gradient' },
+               { name: 'tailwindcss', color: 'green-text-gradient' },
+          ],
+     },
+
+     {
+          id: 5,
+          name: 'rehlaty admin',
+          image: rehlaty,
+          deployed_url: 'https://dztraveling.herokuapp.com/places',
+          source_code_link:
+               'https://github.com/yassineoo/Admin-RehLaty-Web-app',
+          category: ['Express', 'Node', 'Mongo'],
+          description: 'admin web site for e-tourisme in algeria',
+          tags: [
+               { name: 'Node', color: 'pink-text-gradient' },
+               { name: 'Express', color: 'pink-text-gradient' },
+               { name: 'REST API', color: 'green-text-gradient' },
+               { name: 'Bootstrap', color: 'blue-text-gradient' },
+          ],
+     },
+
+     {
+          id: 6,
+          name: 'hackadon',
+          image: hackadon,
+          deployed_url: 'https://hackadon.herokuapp.com/',
+          source_code_link: 'https://github.com/yassineoo/Hckadon-esms2',
+          category: ['Express', 'Node', 'Mongo'],
+          description: 'event website for a charity hackathon with Cse clube ',
+          tags: [
+               { name: 'Node', color: 'pink-text-gradient' },
+               { name: 'Express', color: 'pink-text-gradient' },
+               { name: 'REST API', color: 'green-text-gradient' },
+               { name: 'Bootstrap', color: 'blue-text-gradient' },
+          ],
      },
 ];
 
