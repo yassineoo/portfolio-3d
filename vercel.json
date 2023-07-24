@@ -1,0 +1,13 @@
+{
+    "redirects": [
+      {
+        "source": "/sitemap.xml",
+        "destination": "/public/sitemap.xml",
+        "type": 302,
+        "headers": {
+          "Content-Type": "application/xml"
+        }
+      }
+    ]
+  }
+  
