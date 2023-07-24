@@ -2,11 +2,8 @@
     "redirects": [
       {
         "source": "/sitemap.xml",
-        "destination": "/public/sitemap.xml",
-        
-        "headers": {
-          "Content-Type": "application/xml"
-        }
+        "destination": "/public/sitemap.xml"
+    
       }
     ]
   }
